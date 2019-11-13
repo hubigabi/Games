@@ -1,4 +1,4 @@
-# Projektowanie i programowanie_gier
+# Projektowanie i programowanie gier
 <h3>Pong<h3>
 
 - Tomasz Derzewski
