@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scripts\AI.cs" />
     <Compile Include="Assets\Scripts\Ball.cs" />
     <Compile Include="Assets\Scripts\ContinuePlayingMusic.cs" />
+    <Compile Include="Assets\Scripts\PowerUp.cs" />
+    <Compile Include="Assets\Scripts\PowerUpManager.cs" />
     <Compile Include="Assets\Scripts\RuchGracza.cs" />
     <Compile Include="Assets\Scripts\SplashScreean.cs" />
     <Compile Include="Assets\SoundManager.cs" />
