@@ -1,54 +1,76 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Ball : MonoBehaviour
 {
     public float speed = 30;
+
     private Rigidbody2D rigidBody;
+
     private AudioSource audioSource;
 
-
-    // Start is called before the first frame update
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody2D>();
+        rigidBody = GetComponent<Rigidbody2D> ();
         rigidBody.velocity = Vector2.right * speed;
+        
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if ((col.gameObject.name == "LeftPaddle") || (col.gameObject.name == "RightPaddle"))
+        //LeftPaddle
+        if((collision.gameObject.name == "LewyGracz") || (collision.gameObject.name == "PrawyGracz"))
         {
-            HandlePaddleHit(col);
+            HandlePaddleHit(collision);
         }
-
-        if ((col.gameObject.name == "WallBottom") || (col.gameObject.name == "WallTop"))
+        //WallBottom
+        if((collision.gameObject.name == "ScianaDol") || (collision.gameObject.name == "ScianaGora"))
         {
-            SoundManager.Instance.PlayOneShot(SoundManager.Instance.wallBloop);
+            SoundManager.Instance.PlayOneShot (SoundManager.Instance.wallBloop);
+
         }
-
-        if ((col.gameObject.name == "LeftGoal") || (col.gameObject.name == "RightGoal"))
+        //LeftGoal
+        if ((collision.gameObject.name == "LewaBramka") || (collision.gameObject.name == "PrawaBramka"))
         {
-            SoundManager.Instance.PlayOneShot(SoundManager.Instance.goalBloop);
+            SoundManager.Instance.PlayOneShot (SoundManager.Instance.goalBloop);
+
+            if(collision.gameObject.name=="LewaBramka")
+            {
+                IncreaseTextUIScore("RightScoreUI");
+            }
+
+            if (collision.gameObject.name == "PrawaBramka")
+            {
+                IncreaseTextUIScore("LeftScoreUI");
+            }
+
             transform.position = new Vector2(0, 0);
-        }
 
+        }
     }
 
-    void HandlePaddleHit(Collision2D col)
+    float BallHitPaddleWhere(Vector2 ball, Vector2 paddle, float paddleHeight)
     {
-        float y = BallHitPaddleWhere(transform.position,
-            col.transform.position, col.collider.bounds.size.y);
+        return (ball.y - paddle.y) / paddleHeight;
+    }
+
+    void HandlePaddleHit(Collision2D collision)
+    {
+        float y = BallHitPaddleWhere (transform.position,
+            collision.transform.position,
+            collision.collider.bounds.size.y);
 
         Vector2 dir = new Vector2();
 
-        if (col.gameObject.name == "LeftPaddle")
+        if(collision.gameObject.name == "LewyGracz")
         {
             dir = new Vector2(1, y).normalized;
+            Vector2 dir2 = dir = new Vector2(1, y);
+            Debug.Log("Dir : " + dir + "Dir2 : " + dir2);
         }
-
-        if (col.gameObject.name == "RightPaddle")
+        if(collision.gameObject.name == "PrawyGracz")
         {
             dir = new Vector2(-1, y).normalized;
         }
@@ -58,8 +80,14 @@ public class Ball : MonoBehaviour
         SoundManager.Instance.PlayOneShot(SoundManager.Instance.hitPaddleBloop);
     }
 
-    float BallHitPaddleWhere(Vector2 ball, Vector2 paddle, float paddleHeight)
+    void IncreaseTextUIScore(string textUIName)
     {
-        return (ball.y - paddle.y) / paddleHeight;
+        var textUIComp = GameObject.Find(textUIName).GetComponent<Text>();
+
+        int score = int.Parse(textUIComp.text);
+
+        score++;
+
+        textUIComp.text = score.ToString();
     }
 }
