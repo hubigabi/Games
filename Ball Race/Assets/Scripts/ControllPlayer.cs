@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AddPlayerControlledVelocity : MonoBehaviour
+public class ControllPlayer : MonoBehaviour
 {
     [SerializeField]
     Vector3 v3Force;
