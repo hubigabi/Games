@@ -11,7 +11,10 @@ public class QuitGame : MonoBehaviour
 	void Update ()
     {
         if (Input.GetKey(keyRestart))
+        {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            RestartLevel.levelNumber = 1;
+        }
 
         if (Input.GetKey(KeyCode.Escape))
                 Application.Quit();
