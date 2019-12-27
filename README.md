@@ -1,4 +1,4 @@
-# Projektowanie i programowanie gier
+<h1>Projektowanie i programowanie gier<h1>
 
 ## Games:
 - Pong
