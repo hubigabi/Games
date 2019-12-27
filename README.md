@@ -1,8 +1,9 @@
 # Projektowanie i programowanie gier
-<h3>Games:<h3>
-Pong
-Ball Race
+Games:
+- Pong
+- Ball Race
 
+Authors:
 - Tomasz Derzewski
 - Kamil Szamocki
 - Hubert Gabryszewski
