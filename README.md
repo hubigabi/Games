@@ -1,6 +1,6 @@
 # Projektowanie i programowanie gier
 
-##Games:
+## Games:
 - Pong
 - Ball Race
 
