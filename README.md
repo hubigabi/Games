@@ -1,7 +1,7 @@
 # Projektowanie i programowanie gier
 <h3>Games:<h3>
-<h5>Pong<h5>
-<h5>Ball Race<h5>
+Pong
+Ball Race
 
 - Tomasz Derzewski
 - Kamil Szamocki

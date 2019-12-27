@@ -71,31 +71,31 @@
     <Compile Include="Assets\Scripts\QuitGame.cs" />
     <Compile Include="Assets\Scripts\RestartLevel.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Ball Race/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Projektowanie_i_programowanie_gier/Ball Race/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Ball Race/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Projektowanie_i_programowanie_gier/Ball Race/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Ball Race/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Projektowanie_i_programowanie_gier/Ball Race/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Ball Race/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Projektowanie_i_programowanie_gier/Ball Race/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Ball Race/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Projektowanie_i_programowanie_gier/Ball Race/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Ball Race/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Projektowanie_i_programowanie_gier/Ball Race/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Ball Race/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Projektowanie_i_programowanie_gier/Ball Race/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Ball Race/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Projektowanie_i_programowanie_gier/Ball Race/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Ball Race/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Studia/V_Semestr/Projektowanie i programowanie gier/Labolatorium/Projektowanie_i_programowanie_gier/Ball Race/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
