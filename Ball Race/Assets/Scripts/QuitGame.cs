@@ -17,7 +17,15 @@ public class QuitGame : MonoBehaviour
         }
 
         if (Input.GetKey(KeyCode.Escape))
-                Application.Quit();
-         
+        {
+            Application.Quit();
+        }
+
+        if (Input.GetKey(KeyCode.M))
+        {
+            SceneManager.LoadScene("Menu");
+            RestartLevel.levelNumber = 1;
+        }
+
     }
 }
