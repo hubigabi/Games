@@ -62,14 +62,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ClearRecords.cs" />
     <Compile Include="Assets\Scripts\ControllPlayer.cs" />
     <Compile Include="Assets\Scripts\CopyPosition.cs" />
+    <Compile Include="Assets\Scripts\DisplayPlayerTime.cs" />
+    <Compile Include="Assets\Scripts\DisplayRecords.cs" />
     <Compile Include="Assets\Scripts\DisplayTime.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
+    <Compile Include="Assets\Scripts\LoadMenu.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MoveObject.cs" />
     <Compile Include="Assets\Scripts\MoveObjectWhenEnterPlayer.cs" />
     <Compile Include="Assets\Scripts\MoveToLevel.cs" />
+    <Compile Include="Assets\Scripts\PlayerTime.cs" />
     <Compile Include="Assets\Scripts\QuitGame.cs" />
+    <Compile Include="Assets\Scripts\Record.cs" />
     <Compile Include="Assets\Scripts\RestartLevel.cs" />
     <Compile Include="Assets\Scripts\SetVolume.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />

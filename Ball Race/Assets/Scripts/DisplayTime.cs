@@ -7,8 +7,8 @@ public class DisplayTime : MonoBehaviour
 {
 
     string text = "";
-    double startTime = 0.0;
-    double currentTime = 0.0;
+    public static double startTime = 0.0;
+    public static double currentTime = 0.0;
 
     // Start is called before the first frame update
     void Start()
