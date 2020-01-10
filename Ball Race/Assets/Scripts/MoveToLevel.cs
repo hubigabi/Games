@@ -20,17 +20,14 @@ public class MoveToLevel : MonoBehaviour
     [SerializeField]
     bool move;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    int diamenty = ControllPlayer.diamond;
+
     void Update()
     {
-        
+        diamenty = ControllPlayer.diamond;
     }
+    
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -38,11 +35,22 @@ public class MoveToLevel : MonoBehaviour
         {
             if (move)
             {
-                GameObject.FindGameObjectsWithTag("Player")[0].transform.position = new Vector3(xPosition, yPosition, zPosition);
-                GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<Rigidbody>().velocity = new Vector3(0.0F, 0.0F, 0.0F);
+                if (((toLevel!=3) && (toLevel!=5)) || ((toLevel==3 || toLevel==5)&& diamenty==3))
+                {
+                    GameObject.FindGameObjectsWithTag("Player")[0].transform.position = new Vector3(xPosition, yPosition, zPosition);
+                    GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<Rigidbody>().velocity = new Vector3(0.0F, 0.0F, 0.0F);
+                    RestartLevel.levelNumber = toLevel;
+                }
+                else if(toLevel == 3)
+                {                   
+                    RestartLevel.levelNumber = 2;                                       
+                }
+                
             }
-            RestartLevel.levelNumber = toLevel;
-        }
 
+        }
+            
     }
+
 }
+

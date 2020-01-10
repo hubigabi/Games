@@ -24,15 +24,23 @@ public class RestartLevel : MonoBehaviour
 
             if (levelNumber == 1)
             {
-                GameObject.FindGameObjectsWithTag(strTag)[0].transform.position = new Vector3(0, 2.0F, -46.5F);
+                GameObject.FindGameObjectsWithTag(strTag)[0].transform.position = new Vector3(0, 3.0F, -49.5F);
             }
+
             else if (levelNumber == 2) {
-                GameObject.FindGameObjectsWithTag("Player")[0].transform.position = new Vector3(0.0F, 2.0F, -1.5F);
+                GameObject.FindGameObjectsWithTag("Player")[0].transform.position = new Vector3(0.0F, 2.5F, -3F);
             }
+
             else if (levelNumber == 3)
             {
-                GameObject.FindGameObjectsWithTag("Player")[0].transform.position = new Vector3(-4.2F, 3.2F, 41.0F);
+                GameObject.FindGameObjectsWithTag("Player")[0].transform.position = new Vector3(-38.98F, 10.0F, 160.9F);
             }
+
+            else if (levelNumber == 4)
+            {
+                GameObject.FindGameObjectsWithTag("Player")[0].transform.position = new Vector3(57.37F, 20.0F, 184.42F);
+            }
+
             GameObject.FindGameObjectsWithTag(strTag)[0].GetComponent<Rigidbody>().velocity = new Vector3(0.0F, 0.0F, 0.0F);
         }
     }
