@@ -1,5 +1,3 @@
-# Projektowanie i programowanie gier
-
 ## Games:
 - Pong
 - Ball Race
